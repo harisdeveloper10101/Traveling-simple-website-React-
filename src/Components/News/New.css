@@ -1,0 +1,15 @@
+.header-news {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  font-size: 14px;
+}
+.nav-hamburguer-icon {
+  cursor: pointer;
+}
+.overlay-buttonClose span {
+  cursor: pointer;
+}

@@ -1,0 +1,109 @@
+.Hoteling-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  height: 70vh;
+  width: 100%;
+  padding: 0;
+}
+.Hoteling-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 25%;
+  width: 100%;
+  background-color: var(--main-color);
+}
+.Hoteling-heading h1{
+    font-size: 27px;
+    word-spacing: 5px;
+    height: 37%;
+}
+.Hoteling-heading p{
+    font-size: 15px;
+}
+.Hoteling-details{
+    width: 90%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hoteling-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hoteling-images{
+    height: 20rem;
+    width: 18rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hoteling-images:hover{
+    opacity: 0.5;
+}
+.hoteling-star{
+    width: 3.5rem;
+    transform: scale(2.2);
+    /* margin-top: -10px; */
+}
+.hoteling-details-container p{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+.hoteling-details-container p span{
+    text-transform: capitalize;
+    color: grey;
+}
+.hoteling-pricing{
+    font-size: 14px;
+    color: var(--main-color);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 10%;
+    
+}
+.hoteling-diamond{   
+    width: 2rem;
+    height: 2rem;
+}
+@media (max-width:890px){
+    .Hoteling-heading{
+        height: 10%;
+    }
+    .Hoteling-container {
+        height: 120vh;
+    }
+    /* .Hoteling-details{
+       height: 100em;
+    } */
+}
+@media (max-width:425px){
+    .Hoteling-heading{
+        height: 6%;
+    }
+   .Hoteling-container{
+    height: 220vh;
+   }
+   .Hoteling-heading h1 {
+    font-size: 18px;
+   }
+   .Hoteling-heading p {
+    font-size: 12px;
+   }
+}

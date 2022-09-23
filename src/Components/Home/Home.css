@@ -1,0 +1,149 @@
+.home {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../public/assets/home.jpg");
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+ 
+
+}
+.home-container {
+  height: 40rem;
+  width: 60rem;
+  margin-left: 10rem;
+}
+.home-headings {
+  height: 15%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.home-headings-data {
+  height: 100%;
+  width: 20%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px;
+  cursor: pointer;
+}
+.home-headings-data:hover {
+  background-color: var(--main-color);
+}
+.home-heading-icons {
+  min-width: 25px;
+}
+.home-headings-data span {
+  width: 75%;
+}
+.home-details {
+  background-color: #fff;
+  height: 85%;
+  width: 100%;
+}
+.hotels {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.hotels-heading {
+  font-size: 30px;
+  color: rgb(66, 66, 66);
+}
+.hotels section {
+  /* background-color: blue; */
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+  font-size: 15px;
+}
+.hotels section input {
+  padding: 4px;
+  font-size: 14px;
+}
+.hotels section input::placeholder {
+  padding: 4px;
+  font-size: 11px;
+  color: rgb(173, 165, 165);
+}
+.guests-location {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.guests-rooms {
+  display: flex;
+  flex-direction: column;
+}
+
+.guests-location input {
+  width: 80%;
+}
+.hotel-check {
+  width: 25%;
+}
+.hotel-hidden {
+  visibility: hidden;
+}
+.hotels-searchBtn {
+  width: 80%;
+}
+.hotels-searchBtn input {
+  height: 10rem;
+  width: 15rem;
+  cursor: pointer;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+}
+.hotels-searchBtn input:hover {
+  background-color: black;
+}
+
+@media (max-width: 700px) {
+  .home-container {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  
+  .home {
+    padding: 0;
+  }
+  .home-container{
+    width: 90%;
+  }
+  .hotels-heading{
+    font-size: 20px;
+  }
+  .home-headings-data{
+    font-size: 10px;
+    width: 25%;
+  }
+  .hotels section {
+    font-size: 10px;
+  }
+  .hotels section input {
+    font-size: 9px;
+  }
+  .hotels-searchBtn input {
+    width: 10rem;
+  }
+}
